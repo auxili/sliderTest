@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="2.5" client="site" method="upgrade">
-    <name>Odin Carousel</name>
+    <name>GrupoOdin Carousel</name>
     <author>Enrique Nunyez</author>
     <authorEmail>enrique.nunyez@gmail.com</authorEmail>
     <version>1.0.0</version>
-    <description>Carousel bootstrapped for Joomla 2.5</description>
+    <description>Odin Group - Carousel bootstrapped for Joomla 2.5</description>
     <files>
         <filename>mod_carousel.xml</filename>
         <filename module="mod_carousel">mod_carousel.php</filename>
@@ -12,10 +12,11 @@
         <filename>helper.php</filename>
         <filename>tmpl/default.php</filename>
         <filename>tmpl/index.html</filename>
+        <filename>assets/js/bootstrap.min.js</filename>
+        <filename>assets/css/bootstrap.min.css</filename>
+        <filename>assets/css/mod_carousel.css</filename>
     </files>
     <config>
-        <params>
-            
-        </params>
+        
     </config>
 </extension>
