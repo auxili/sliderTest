@@ -1,34 +1,47 @@
 <?php // no direct access
 defined('_JEXEC') or die('Restricted access');
 ?>
-<div class="carousel_container">
-    <div class="containerModule">&nbsp;
-        <div class="container fill ">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="active item">
-                        <div class="fill" style="background-image: url('images/1900x1080_01.gif');">&nbsp;</div>
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <h2>Esto es un h2</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="fill" style="background-image: url('images/1900x1080_02.gif');">&nbsp;</div>
-                        <div class="carousel-caption">
-                            <h2>esto es OTRO h2</h2>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="fill" style="background-image: url('images/1900x1080_03.gif');">&nbsp;</div>
-                        <div class="carousel-caption">
-                            <h2>Este es otro OTRO h2</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="pull-center"><a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a> <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a></div>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p>NThis is an paragraph example that you can just modify</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
             </div>
+          </div>
         </div>
-    </div>
-</div>
+        <div class="item">
+          <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
