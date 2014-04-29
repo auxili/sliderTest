@@ -20,8 +20,8 @@
     </files>
     <config>
         <fields name="params">
-            <fieldset name="source" label="Style Options">
-                <field name="space" type="category" extension="com_content" multiple="true" size="10" default="" label="Data Source" description="Select category" />
+            <fieldset name="captions" label="Text Captions">
+                <field name="text_to_caption01" type="text" size="20" default="Introduce your text here" label="Caption 01" description="CAROUSEL_ODIN_MODULE_TITLES" />
                 <field name="show_child_category_articles" type="radio" class="btn-group" default="0" label="Child Category Articles" description="Include or Exclude Articles from Child Categories.">
                     <option value="1">Include</option>
                     <option value="0">Exclude

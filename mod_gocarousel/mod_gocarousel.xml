@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+    <name>GOCarousel</name>
+    <author>Enrique Nunyez</author>
+    <authorEmail>info@grupoodin.es</authorEmail>
+    <company>Grupo Odin - 2014</company>
+    <authorUrl>http://grupoodin.es</authorUrl>
+    <version>1.2.0</version>
+    <description>GOCarousel bootstrapped for Joomla 2.5 by Grupo Odin
+        
+        <![CDATA[
+        <h3>Must Read - <span class="label label-default">New</span></h3>
+        <ul class="list-group">
+            <li>Bassed on Bootstrap 3.1.1 carousel to easy implementation on Joomla. Can be deactivated via admin panel</li>
+            <li>jQuery 1.11 - Can be deactivated via admin panel</li>
+            
+        </ul>
+        <h3>Admin Pannel Option Menu</h3>
+        <ol class="list-group">
+            <li>+ 1 to 6 image chooser from your media folder ( /images )</li>
+            <li>+ Text caption writer: you can also put a diferent caption text over each image.</li>
+            <li>+ Text color picker: choose the color you want to your caption text.</li>
+            <li>+ Plus a Font size selector... </li>
+            <li>+ ... and the best five google fonts ever can be chosen</li>
+            <li>+ Carousel Size options: you can select the height (in pixels) and the width ( in %: 100% will be full screen width).</li>
+            <li>+ Carousel interval time can be changed from 1500 to 9000 milliseconds. </li>
+            <li>+ Script options: If you have some code problems because a jQuery or bootstrap conflicts, you can easily turn off one, both or none of them.</li>
+        </ol>
+        <a href="http://grupoodin.es"><img alt="walkswithme" src="http://grupoodin.es/templates/grupoodin.es/images/logo-cabacera.png"></a>
+        ]]>
+        
+    </description>
+    <files>
+        <filename>mod_gocarousel.xml</filename>
+        <filename module="mod_gocarousel">mod_gocarousel.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>assets/js/bootstrap.min.js</filename>
+        <filename>assets/js/index.html</filename>
+        <filename>assets/js/jquery.min.js</filename>
+        <filename>assets/css/bootstrap.min.css</filename>
+        <filename>assets/css/mod_gocarousel.css</filename>
+        <filename>assets/css/index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            
+            <fieldset name="imagesloader" label="Image loader placed in yourweb/images">
+                <field name="imagelocation01" type="imagelist"  default="" label="Select an image" description="Choose NO SELECTED to unuse this item" directory="/images" exclude="" stripext="" />
+                <field name="imagelocation02" type="imagelist"  default="" label="Select an image" description="Choose NO SELECTED to unuse this item" directory="/images" exclude="" stripext="" />
+                <field name="imagelocation03" type="imagelist"  default="" label="Select an image" description="Choose NO SELECTED to unuse this item" directory="/images" exclude="" stripext="" />
+                <field name="imagelocation04" type="imagelist"  default="" label="Select an image" description="Choose NO SELECTED to unuse this item" directory="/images" exclude="" stripext="" />
+                <field name="imagelocation05" type="imagelist"  default="" label="Select an image" description="Choose NO SELECTED to unuse this item" directory="/images" exclude="" stripext="" />
+                <field name="imagelocation06" type="imagelist"  default="" label="Select an image" description="Choose NO SELECTED to unuse this item" directory="/images" exclude="" stripext="" />
+            </fieldset>
+			
+            
+            <fieldset name="captions" label="Text Captions">
+                <field name="texttocaption01" type="text" size="20" default="" label="Introduce your text here" description="If empty, no text caption over image" />
+                <field name="texttocaption02" type="text" size="20" default="" label="Introduce your text here" description="If empty, no text caption over image" />
+                <field name="texttocaption03" type="text" size="20" default="" label="Introduce your text here" description="If empty, no text caption over image" />
+                <field name="texttocaption04" type="text" size="20" default="" label="Introduce your text here" description="If empty, no text caption over image" />
+                <field name="texttocaption05" type="text" size="20" default="" label="Introduce your text here" description="If empty, no text caption over image" />
+                <field name="texttocaption06" type="text" size="20" default="" label="Introduce your text here" description="If empty, no text caption over image" />
+            </fieldset>
+            
+            <fieldset name="text_options" label="Caption text Options">
+                <field name="textcolorchooser" type="color" default="#FFFFFF" label="Tittle text color" description="Click on field to show color picker"></field>
+                <field name="textsize" type="integer" default="33" label="Tittle text size in pixels" description="Choose the caption text size" first="10" last="80" step="1">
+                </field>
+                <field name="text_type" type="list" label="Text Type" default="Courgette" description="Choose the font family">
+                    <option value="Courgette">Courgette</option>
+                    <option value="Roboto">Roboto</option>
+                    <option value="Lato">Lato</option>
+                    <option value="PT+Sans+Caption">Pt Sans Caption</option>
+                    <option value="Ubuntu">Ubuntu</option>
+                    <option value="Exo+2">Exo 2</option>
+                </field>
+            </fieldset>
+            <fieldset name="size_options" label="Size Options">
+                <field name="chooseHeight" type="integer" default="400" label="height (in pixels)" description="Choose height in pixels" first="400" last="1000" step="10" />
+                <field name="chooseWidth" type="integer" default="100" label="width (in % )" description="Choose width in %" first="0" last="100" step="1" />
+            </fieldset>
+            	
+            
+            <fieldset  name="carousel_interval" label="Carousel Interval Time">
+                <field name="data_interval" type="integer" default="5000" label="Transition time delay (in ms.)" description="Choose the time delayed between items (in milliseconds)" first="1500" last="9000" step="500">
+                    
+                </field>
+            </fieldset>
+            <fieldset  name="script_options" label="Script options">
+                
+                <field name="enable_jquery" type="list" label="Enable Jquery Javascript?" default="0" description="If you have problems with the script, you can enable or disable carousel js.">
+                    <option value="0">yes</option>
+                    <option value="1">no</option>
+                </field>
+                <field name="enable_bootstrap" type="list" label="Enable Bootstrap javascript?" default="0" description="If you have problems with the script, you can enable or disable carousel js.">
+                    <option value="0">yes</option>
+                    <option value="1">no</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

@@ -16,4 +16,6 @@ $document->addScript('modules/mod_carousel/assets/js/bootstrap.min.js');
 $carousel = modCarouselHelper::getCarousel($params);
 require( JModuleHelper::getLayoutPath('mod_carousel') );
 
+$text_to_caption01 = $params->get('text_to_caption01','');
+echo "Esto va despues de recoger la variable";
 ?>
