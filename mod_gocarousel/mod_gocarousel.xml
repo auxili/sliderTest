@@ -6,30 +6,11 @@
     <company>Grupo Odin - 2014</company>
     <authorUrl>http://grupoodin.es</authorUrl>
     <version>1.2.0</version>
-    <description>GOCarousel bootstrapped for Joomla 2.5 by Grupo Odin
-        
-        <![CDATA[
-        <h3>Must Read - <span class="label label-default">New</span></h3>
-        <ul class="list-group">
-            <li>Bassed on Bootstrap 3.1.1 carousel to easy implementation on Joomla. Can be deactivated via admin panel</li>
-            <li>jQuery 1.11 - Can be deactivated via admin panel</li>
-            
-        </ul>
-        <h3>Admin Pannel Option Menu</h3>
-        <ol class="list-group">
-            <li>+ 1 to 6 image chooser from your media folder ( /images )</li>
-            <li>+ Text caption writer: you can also put a diferent caption text over each image.</li>
-            <li>+ Text color picker: choose the color you want to your caption text.</li>
-            <li>+ Plus a Font size selector... </li>
-            <li>+ ... and the best five google fonts ever can be chosen</li>
-            <li>+ Carousel Size options: you can select the height (in pixels) and the width ( in %: 100% will be full screen width).</li>
-            <li>+ Carousel interval time can be changed from 1500 to 9000 milliseconds. </li>
-            <li>+ Script options: If you have some code problems because a jQuery or bootstrap conflicts, you can easily turn off one, both or none of them.</li>
-        </ol>
-        <a href="http://grupoodin.es"><img alt="walkswithme" src="http://grupoodin.es/templates/grupoodin.es/images/logo-cabacera.png"></a>
-        ]]>
-        
-    </description>
+    <description>MOD_GOCAROUSEL_XML_DESCRIPTION</description>
+    <languages>
+        <language tag="en-GB">en-GB.mod_gocarousel.ini</language>
+        <language tag="en-GB">en-GB.mod_gocarousel.sys.ini</language>
+    </languages>
     <files>
         <filename>mod_gocarousel.xml</filename>
         <filename module="mod_gocarousel">mod_gocarousel.php</filename>
