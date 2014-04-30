@@ -47,7 +47,7 @@ defined('_JEXEC') or die('Restricted access');
                     if(strlen($imagelocation04)>2){ ?>
                         <div class="item" style="height: <?php echo $chooseHeight ?>px;">
                             <div class="fill" style="background-image: url('images/<?php echo $imagelocation04 ?>');"></div>
-                            <?php if (strlen($texttocaption01)>1){ ?>
+                            <?php if (strlen($texttocaption04)>1){ ?>
                             <div class="carousel-caption">
                                 <h2 style="color: <?php echo $textcolorchooser ?>; font-size: <?php echo $textsize ?>px;font-family:<?php echo $text_type ?>;"><?php echo $texttocaption04 ?></h2>
                             </div>
@@ -58,7 +58,7 @@ defined('_JEXEC') or die('Restricted access');
                     if(strlen($imagelocation05)>2){ ?>
                     <div class="item"  style="height: <?php echo $chooseHeight ?>px;">
                         <div class="fill" style="background-image: url('images/<?php echo $imagelocation05 ?>');"></div>
-                        <?php if (strlen($texttocaption02)>1){ ?>
+                        <?php if (strlen($texttocaption05)>1){ ?>
                         <div class="carousel-caption">
                             <h2 style="color: <?php echo $textcolorchooser ?>; font-size: <?php echo $textsize ?>px;font-family:<?php echo $text_type ?>;"><?php echo $texttocaption05 ?></h2>
                         </div>
@@ -69,7 +69,7 @@ defined('_JEXEC') or die('Restricted access');
                     if(strlen($imagelocation06)>2){ ?>
                     <div class="item"  style="height: <?php echo $chooseHeight ?>px;">
                         <div class="fill" style="background-image: url('images/<?php echo $imagelocation06 ?>');"></div>
-                        <?php if (strlen($texttocaption03)>1){ ?>
+                        <?php if (strlen($texttocaption06)>1){ ?>
                         <div class="carousel-caption">
                             <h2 style="color: <?php echo $textcolorchooser ?>; font-size: <?php echo $textsize ?>px;font-family:<?php echo $text_type ?>;"><?php echo $texttocaption06 ?></h2>
                         </div>

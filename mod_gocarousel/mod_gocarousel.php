@@ -20,19 +20,19 @@ $document->addStyleSheet('modules/mod_gocarousel/assets/css/mod_gocarousel.css')
 $carousel = modCarouselHelper::getCarousel($params);
 
 //vars
-$texttocaption01 = $params->get('texttocaption01','');
-$texttocaption02 = $params->get('texttocaption02','');
-$texttocaption03 = $params->get('texttocaption03','');
-$texttocaption04 = $params->get('texttocaption04','');
-$texttocaption05 = $params->get('texttocaption05','');
-$texttocaption06 = $params->get('texttocaption06','');
+$texttocaption01 = $params->get('texttocaption01','0');
+$texttocaption02 = $params->get('texttocaption02','0');
+$texttocaption03 = $params->get('texttocaption03','0');
+$texttocaption04 = $params->get('texttocaption04','0');
+$texttocaption05 = $params->get('texttocaption05','0');
+$texttocaption06 = $params->get('texttocaption06','0');
 
-$imagelocation01 = $params->get('imagelocation01','');
-$imagelocation02 = $params->get('imagelocation02','');
-$imagelocation03 = $params->get('imagelocation03','');
-$imagelocation04 = $params->get('imagelocation04','');
-$imagelocation05 = $params->get('imagelocation05','');
-$imagelocation06 = $params->get('imagelocation06','');
+$imagelocation01 = $params->get('imagelocation01','0');
+$imagelocation02 = $params->get('imagelocation02','0');
+$imagelocation03 = $params->get('imagelocation03','0');
+$imagelocation04 = $params->get('imagelocation04','0');
+$imagelocation05 = $params->get('imagelocation05','0');
+$imagelocation06 = $params->get('imagelocation06','0');
 
 $chooseHeight = $params->get('chooseHeight','');
 $chooseWidth = $params->get('chooseWidth','');
