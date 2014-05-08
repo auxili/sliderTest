@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en>
+      <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- // llamada cabeceras joomla // <jdoc:include type="head" /> -->
+
+      <!-- //  javaScript  //-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/grupoodin.js"></script>
+
+    <!-- //  CSS  //-->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/template.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <div class="container wrapper">   
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html"><img src="img/czsale_logo.png"></a>
+        </div>
+        <!-- /Logo -->  
+        <!-- Static navbar -->
+        <nav role="navigation" class="navbar navbar-default">
+            <div class="navbar-header">
+                <button data-target="#relojesOrient-navbar" data-toggle="collapse" class="navbar-toggle" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="relojesOrient-navbar" class="collapse navbar-collapse">
+                <a role="button" class="btn btn-success navbar-btn add-classified-btn navbar-left" href="addClassified.html">Add classified</a>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Pages <b class=""></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="addClassified.html">Clasificados</a></li>
+                            <li><a href="category.html">Categoria</a></li>
+                            <li><a href="detail.html">detalles</a></li>
+                            <li><a href="conditions.html">condiciones</a></li>
+                            <li><a href="help.html">Ayuda(FAQ)</a></li>
+                            <li><a href="contact.html">Contacto</a></li>
+                            <li><a href="signUp.html">Sign Up</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="signUp.html">Sign Up</a></li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Sign in <b class="caret"></b></a>
+                        <ul style="padding: 15px;min-width: 250px;" class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form id="login-nav" accept-charset="UTF-8" action="login" method="post" role="form" class="form">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail2" class="sr-only">Email address</label>
+                                                <input type="email" required="" placeholder="Email address" id="exampleInputEmail2" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword2" class="sr-only">Password</label>
+                                                <input type="password" required="" placeholder="Password" id="exampleInputPassword2" class="form-control">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> Remember me
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn btn-success btn-block" type="submit">Sign in</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <input type="button" value="Sign In with Google" id="sign-in-google" class="btn btn-primary btn-block">
+                                <input type="button" value="Sign In with Twitter" id="sign-in-twitter" class="btn btn-primary btn-block">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /Static navbar --> 
+
+        <h1>OAH FDHKJSDHF KJSDH FKSJDHF </h1>
+
+        <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+        <h3>Must Read - <span class="label label-default">New</span></h3>
+        <ul class="list-group">
+            <li class="list-group-item">Bassed on Bootstrap 3.1.1 carousel to easy implementation on Joomla. Can be deactivated via admin panel</li>
+            <li class="list-group-item">jQuery 1.11 - Can be deactivated via admin panel</li>
+
+        </ul>
+        <h3>Admin Pannel Option Menu</h3>
+        <ol class="list-group">
+            <li class="list-group-item">+ 1 to 6 image chooser from your media folder ( /images )</li>
+            <li class="list-group-item">+ Text caption writer: you can also put a diferent caption text over each image.</li>
+            <li class="list-group-item">+ Text color picker: choose the color you want to your caption text.</li>
+            <li class="list-group-item">+ Plus a Font size selector... </li>
+            <li class="list-group-item">+ ... and the best five google fonts ever can be chosen</li>
+            <li class="list-group-item">+ Carousel Size options: you can select the height (in pixels) and the width ( in %: 100% will be full screen width).</li>
+            <li class="list-group-item">+ Carousel interval time can be changed from 1500 to 9000 milliseconds. </li>
+            <li class="list-group-item">+ Script options: If you have some code problems because a jQuery or bootstrap conflicts, you can easily turn off one, both or none of them.</li>
+        </ol>
+        <a href="http://grupoodin.es"><img alt="walkswithme" src="http://grupoodin.es/templates/grupoodin.es/images/logo-cabacera.png"></a>
+
+
+        <!-- Content -->
+        <div class="row content">
+            <div class="col-lg-3 content-left">
+                <h4>Search</h4>
+                <div class="well well-sm">
+                    <form>
+                        <fieldset>
+                            <input type="text" class="form-control">
+                            <small><a class="btn-advanced-search" href="#">Advanced</a></small>
+                            <input type="submit" value="Search" class="btn btn-danger btn-sm btn-search">
+                        </fieldset>
+                    </form>
+                </div>
+                <h4>Categories</h4>
+                <div class="list-group categories">
+                    <a class="list-group-item" href="#">Books <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <a class="list-group-item" href="#">Cameras &amp; Photo <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <a class="list-group-item" href="#">Cell Phones &amp; Accessories <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <a class="list-group-item" href="#">Clothing, Shoes &amp; Accessories <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <a class="list-group-item" href="#">Computers &amp; Networking <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <a class="list-group-item" href="#">DVDs &amp; Movies <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <a class="list-group-item" href="#">Health &amp; Beauty <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <a class="list-group-item" href="#">Music <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <a class="list-group-item" href="#">Toys &amp; Hobbies <span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+                <h4>Newest classifieds</h4>
+                <div class="newest-classifieds">
+                    <div class="media">
+                        <a href="#" class="pull-left">
+                            <img src="http://placehold.it/64x64/e0e0e0" style="width: 64px; height: 64px;" class="media-object">
+                        </a>
+                        <div class="media-body">
+                            <p><a href="#"><strong>Samsung Galaxy S4</strong></a></p>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel ...</p>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <a href="#" class="pull-left">
+                            <img src="http://placehold.it/64x64/e0e0e0" style="width: 64px; height: 64px;" class="media-object">
+                        </a>
+                        <div class="media-body">
+                            <p><a href="#"><strong>Vizio 60" Slim Frame 3D LED</strong></a></p>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel ...</p>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <a href="#" class="pull-left">
+                            <img src="http://placehold.it/64x64/e0e0e0" style="width: 64px; height: 64px;" class="media-object">
+                        </a>
+                        <div class="media-body">
+                            <p><a href="#"><strong>Apple McBook Pro</strong></a></p>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel ...</p>
+                        </div>
+                    </div>
+                    <p class="text-right show-more"><a href="#">More →</a></p>
+                </div>
+            </div>
+            <div class="col-lg-9 content-right">
+                <h4>Featured</h4>
+                <div id="slides" style="overflow: hidden; display: block;">
+                    <div class="slidesjs-container" style="overflow: hidden; position: relative; width: 823px; height: 274.333px;"><div class="slidesjs-control" style="position: relative; left: 0px; width: 823px; height: 274.333px;"><img src="img/slides/slide-00.jpg" class="slidesjs-slide" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none;" slidesjs-index="0"><img src="img/slides/slide-01.jpg" class="slidesjs-slide" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 10; display: block;" slidesjs-index="1"><img src="img/slides/slide-02.jpg" class="slidesjs-slide" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none;" slidesjs-index="2"></div></div>
+
+
+                    <a class="slidesjs-previous slidesjs-navigation" href="#"><i class="icon-chevron-left icon-large"></i></a>
+                    <a class="slidesjs-next slidesjs-navigation" href="#"><i class="icon-chevron-right icon-large"></i></a>
+                    <ul class="slidesjs-pagination"><li class="slidesjs-pagination-item"><a href="#" data-slidesjs-item="0" class="">1</a></li><li class="slidesjs-pagination-item"><a href="#" data-slidesjs-item="1" class="active">2</a></li><li class="slidesjs-pagination-item"><a href="#" data-slidesjs-item="2" class="">3</a></li></ul></div>
+                <h4>Recommended</h4>
+                <div class="row selected-classifieds">
+                    <div class="col-lg-3">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/800x600/e0e0e0">
+                            <div class="caption">
+                                <p><small><a href="#">Samsung Galaxy S4</a></small></p><p>
+                                </p><p><strong>550 EUR</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/800x600/e0e0e0">
+                            <div class="caption">
+                                <p><small><a href="#">Vizio 60" Slim Frame 3D LED</a></small></p><p>
+                                </p><p><strong>370 EUR</strong></p>                 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/800x600/e0e0e0">
+                            <div class="caption">
+                                <p><small><a href="#">Logitech 2.1 HS-263</a></small></p><p>
+                                </p><p><strong>36 EUR</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/800x600/e0e0e0">
+                            <div class="caption">
+                                <p><small><a href="#">Apple McBook Pro</a></small></p><p>
+                                </p><p><strong>740 EUR</strong></p>                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row selected-classifieds">
+                    <div class="col-lg-3">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/800x600/e0e0e0">
+                            <div class="caption">
+                                <p><small><a href="#">Adidas Blake 46"</a></small></p><p>
+                                </p><p><strong>55 EUR</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/800x600/e0e0e0">
+                            <div class="caption">
+                                <p><small><a href="#">Card reader MobileLite G2</a></small></p><p>
+                                </p><p><strong>10 EUR</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/800x600/e0e0e0">
+                            <div class="caption">
+                                <p><small><a href="#">Electonics toolkit (40 pieces)</a></small></p><p>
+                                </p><p><strong>28 EUR</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/800x600/e0e0e0">
+                            <div class="caption">
+                                <p><small><a href="#">Nokia Lumia 800</a></small></p><p>
+                                </p><p><strong>185 EUR</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Content -->
+        <div class="footer">
+            <div class="well well-sm">
+                <div class="pull-left">
+                    <ul class="nav nav-pills">
+                        <li><a href="addClassified.html"><span class="glyphicon glyphicon-plus"></span> Add classified</a></li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <ul class="nav nav-pills">
+                        <li><a href="help.html">Help</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="conditions.html">Rules &amp; conditions</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix">&nbsp;</div>
+            </div>
+            <div class="pull-right">
+                <p class="text-muted"><small>Copyright &copy; 2013-2014, SenseMedia.cz - All Rights Reserved.</small></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

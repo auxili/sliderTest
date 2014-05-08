@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <script>
+            function ready() {
+                alert("Ponga la fecha de su pc a punto.");
+                creaTabla();
+                document.getElementById("cal").innerHTML = cal;
+                mifecha();
+                saberDia();
+            }
+            function creaTabla() {
+                cal = "<div><div class='week_day'>L</div><div class='week_day'>M</div><div class='week_day'>X</div><div class='week_day'>J</div><div class='week_day'>V</div><div class='week_day'>S</div><div class='week_day'>D</div></div>";
+                for (i = 1; i < 30; i++) {
+                    cal += "<div class=''><div class='mounth_day'>" + i + "</div>";
+                }
+            }
+            function saberDia() {
+                alert("entrando en saber dia");
+
+                var fecha = new date();
+                var dia_semana = fecha.getDay();
+                var dia_mes = fecha.getDate();
+                var nombre_mes = fecha.getMounth();
+
+                alert("dia semana: " + dia_semana);
+            }
+            function mifecha() {
+
+                var dias_semana = new Array("Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado");
+                var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+                var fecha_actual = new Date();
+
+                alert("Hoy es " + dias_semana[fecha_actual.getDay()] + " dia " + fecha_actual.getDate() + " de " + meses[fecha_actual.getMonth()] + " de " + fecha_actual.getFullYear());
+
+            }
+
+        </script>
+        <style>
+            .contiene{
+                max-width: 600px;
+                
+            }
+            .mounth_day, .week_day{
+                width: 80px;
+                float:left;
+            }
+        </style>
+    </head>
+    <body onload="ready()">
+        <div class="container-fluid contiene">
+            <table class="table table-bordered" id="cal">
+                <!-- dias de la semana -->
+                <tr>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>X</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>S</th>
+                    <th>D</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
