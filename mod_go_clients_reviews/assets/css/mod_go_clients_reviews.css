@@ -1,0 +1,29 @@
+/* --------------------===================---------------------- */
+/* ----------------//   Grupo Odin css    //------------------- */
+/* ---------------//        Clients      //------------------- */
+/* --------------//         Reviews     //------------------- */
+/* ----------------===================---------------------- */
+.go_clients_review .cr_title{
+}
+.comillas{
+    font-size: 80px;
+    font-family: arial;
+}
+#cita0,#cita1,#cita2,#cita3,#cita4,#cita5,#cita6,#cita7,#cita8,#cita9
+{
+    position: absolute;
+    visibility: hidden;
+}
+.aleatorio a{
+    cursor: pointer;
+    float:right;
+}
+.cita_actual{
+    margin: 5px 10px;
+    font-size: 1.1em;
+    text-align: justify;
+    font-style: italic;
+}
+#misCitas{
+    opacity: 0;
+}

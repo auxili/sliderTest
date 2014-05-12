@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+    type="module"
+    version="2.5"
+    client="site"
+    method="upgrade">
+
+    <name>go_clients_reviews</name>
+        <author>Enrique Nunyez</author>
+        <authorEmail>info@grupoodin.es</authorEmail>
+        <company>Grupo Odin - 2014</company>
+        <authorUrl>http://grupoodin.es</authorUrl>
+        <version>0.1</version>
+        <description>MOD_GO_CLIENTS_REVIEWS_XML_DESCRIPTION</description>
+        <languages>
+            <language tag="en-GB">en-GB.mod_go_clients_reviews.ini</language>
+            <language tag="en-GB">en-GB.mod_go_clients_reviews.sys.ini</language>
+        </languages>
+        <files>
+            <filename>mod_go_clients_reviews.xml</filename>
+            <filename module="mod_go_clients_reviews">mod_go_clients_reviews.php</filename>
+            <filename>index.html</filename>
+            <filename>tmpl/default.php</filename>
+            <filename>tmpl/index.html</filename>
+            <filename>assets/js/mod_go_clients_reviews.js</filename>
+            <filename>assets/js/index.html</filename>
+            <filename>assets/css/font-awesome.min.css</filename>
+            <filename>assets/css/mod_go_clients_reviews.css</filename>
+            <filename>assets/css/index.html</filename>
+        </files>
+        <config>
+            <fields name="params">
+                <fieldset name="text_captions" label="Text Captions">
+                    <field name="title" type="text" size="30" default="Clients Reviews" label="Introduce your title text here" description="Module Title optional"/>
+                    <field name="texttocaption00" type="text" size="30" default="You must write one review at least. Thank You." label="Introduce your text here" description="Enter the client review text"/>
+                    <field name="texttocaption01" type="text" size="30" default="" label="Introduce your text here" description="Enter the client review text"/>
+                    <field name="texttocaption02" type="text" size="30" default="" label="Introduce your text here" description="Enter the client review text"/>
+                    <field name="texttocaption03" type="text" size="30" default="" label="Introduce your text here" description="Enter the client review text"/>
+                    <field name="texttocaption04" type="text" size="30" default="" label="Introduce your text here" description="Enter the client review text"/>
+                    <field name="texttocaption05" type="text" size="30" default="" label="Introduce your text here" description="Enter the client review text"/>
+                    <field name="texttocaption06" type="text" size="30" default="" label="Introduce your text here" description="Enter the client review text"/>
+                    <field name="texttocaption07" type="text" size="30" default="" label="Introduce your text here" description="Enter the client review text"/>
+                    <field name="texttocaption08" type="text" size="30" default="" label="Introduce your text here" description="Enter the client review text"/>
+                    <field name="texttocaption09" type="text" size="30" default="" label="Introduce your text here" description="Enter the client review text"/>
+                </fieldset>
+                <fieldset name="text_format" label="Text Format">
+                    <field name="cr_fontsize" type="integer" default="26" label="Title font size in pixels" description="Title font size (in pixels)" first="6" last="86" step="1"/>
+                    <field name="cr_titlecolor" type="color" default="#000000" label="Tittle text color" description="Click on field to show color picker"/>
+                    <field name="cr_texttocaption_size" type="integer" default="12" label="Caption font size in pixels" description="Caption font size (in pixels)" first="6" last="86" step="1"/>
+                    
+                </fieldset>
+                <fieldset name="scripting" label="Load jQuery">
+                    <field name="enable_jquery" type="list" label="Enable Jquery Javascript?" default="0" description="If you have problems with the script, you can enable or disable carousel js.">
+                    <option value="0">yes</option>
+                    <option value="1">no</option>
+                </field>
+                </fieldset>
+            </fields>
+        </config>
+</extension>
